@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget titleSection = Container(
+      color: Colors.orangeAccent,
       padding: const EdgeInsets.all(32),
       child: Row(
         children: [
@@ -20,16 +21,16 @@ class MyApp extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: const Text(
-                    'Oeschinen Lake Campground',
+                    'The wonderful Oti Water falls',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
                 Text(
-                  'Kandersteg, Switzerland',
+                  'Attraction Site, Ghana',
                   style: TextStyle(
-                    color: Colors.grey[500],
+                    color: Colors.grey[900],
                   ),
                 ),
               ],
@@ -54,6 +55,7 @@ class MyApp extends StatelessWidget {
     );
 
     Widget textSection = Container(
+      color: Colors.orangeAccent,
       padding: const EdgeInsets.all(32),
       child: const Text(
         'Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese '
@@ -63,6 +65,7 @@ class MyApp extends StatelessWidget {
         'lake, which warms to 20 degrees Celsius in the summer. Activities '
         'enjoyed here include rowing, and riding the summer toboggan run.',
         softWrap: true,
+        style: TextStyle(color: Colors.black),
       ),
     );
 
@@ -70,7 +73,12 @@ class MyApp extends StatelessWidget {
       title: 'Tour Info App',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Tour Info App'),
+          backgroundColor: Colors.orange,
+          title: Text(
+            'Tour Info App',
+            style: TextStyle(color: Colors.black),
+          ),
+          centerTitle: true,
         ),
         body: ListView(
           children: [
